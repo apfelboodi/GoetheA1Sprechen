@@ -1,0 +1,12 @@
+export { default as AppleIcon } from './AppleIcon';
+export { default as BottleIcon } from './BottleIcon';
+export { default as BriefcaseIcon } from './BriefcaseIcon';
+export { default as ChairIcon } from './ChairIcon';
+export { default as CutleryIcon } from './CutleryIcon';
+export { default as GlassWaterIcon } from './GlassWaterIcon';
+export { default as MusicIcon } from './MusicIcon';
+export { default as NoSmokingIcon } from './NoSmokingIcon';
+export { default as NotebookIcon } from './NotebookIcon';
+export { default as PencilIcon } from './PencilIcon';
+export { default as RadioIcon } from './RadioIcon';
+export { default as WatchIcon } from './WatchIcon';

@@ -1,0 +1,7 @@
+{
+  "name": "Goethe A1 Sprechen",
+  "description": "An interactive web application to practice for the Goethe-Institut's A1 level German speaking exam (Sprechen), based on the official Modellsatz.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
