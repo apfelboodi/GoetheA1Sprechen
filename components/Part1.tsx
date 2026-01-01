@@ -40,7 +40,7 @@ const Part1: React.FC<Part1Props> = ({ onComplete }) => {
     setState({ status: 'evaluating', result: null, error: null });
     
     try {
-        // FIX: Use process.env.API_KEY for the API key.
+        // FIX: Use process.env.API_KEY instead of import.meta.env.VITE_API_KEY
         const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
         const audioData = await blobToBase64(blob);
 
