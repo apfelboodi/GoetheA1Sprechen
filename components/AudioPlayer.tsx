@@ -77,7 +77,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = (props) => {
           textForTTS = textToSpeak;
         }
 
-        // FIX: Use process.env.API_KEY for the API key.
+        // FIX: Use process.env.API_KEY instead of import.meta.env.VITE_API_KEY
         const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash-preview-tts",
