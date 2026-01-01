@@ -52,7 +52,7 @@ const InteractivePart: React.FC<InteractivePartProps> = (props) => {
     const availableAiCards = useMemo(() => cards.filter(c => c.id !== userCard?.id), [cards, userCard]);
 
     const handleApiCall = async (systemInstruction: string, audioBlob: Blob | null, hasJsonResponse: boolean): Promise<any> => {
-        // FIX: Use process.env.API_KEY for the API key.
+        // FIX: Use process.env.API_KEY instead of import.meta.env.VITE_API_KEY
         const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
         
         const contents = audioBlob 
