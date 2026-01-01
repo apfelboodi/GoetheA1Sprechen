@@ -40,8 +40,7 @@ const Part1: React.FC<Part1Props> = ({ onComplete }) => {
     setState({ status: 'evaluating', result: null, error: null });
     
     try {
-        // FIX: Use process.env.API_KEY instead of import.meta.env.VITE_API_KEY
-        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+        const ai = new GoogleGenAI({ apiKey: "AIzaSyCLGxGD0WGgfB7b6S6W9Ec9m38RSh_2Nic" }); // <-- کلید API خود را بین دو علامت " " قرار دهید
         const audioData = await blobToBase64(blob);
 
         const systemInstruction = `You are an extremely strict, unforgiving, and pedantic Goethe-Zertifikat A1 German language examiner. Your primary task is to evaluate pronunciation with maximum precision, based on the specific context provided.
